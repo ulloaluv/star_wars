@@ -16,7 +16,7 @@ async function obtener_personaje(id) {
         let response = await fetch(`${API}${id}`)
         return personaje( await response.json(), await id)
     } catch(error) {
-        console.error('[error]: ${error}')
+        console.error(`[error]: ${error}`)
     }
 }
 
